@@ -10,11 +10,11 @@ def index():
 @app.route("/information")
 def info():
     return "<h1> puppies are cute! </h1>"
-    
+
 #dynamic routing
 @app.route("/puppy/<name>")
 def puppy(name):
-    return "<h1> this is a page for {}</h1>".format(name)
+    return "upper case:{}".format(name.upper())
 
 
 if __name__ == '__main__':
